@@ -1,5 +1,3 @@
-var e;
-var t;
 /**
  * @name mcCombo - Multiselect Combination Box
  * @desc AngularJs directive that receive an option list to render a multiselectable combination box
