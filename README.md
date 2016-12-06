@@ -1,5 +1,5 @@
 # multi-select
-Simple angularJs directive that allow make a friendly multiselect combo
+Friendly multiselect combo in a simple angularJs directive
 
 Demo: https://jsfiddle.net/andersonvioto/h26vtLsg/2/
 
