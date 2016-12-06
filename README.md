@@ -1,5 +1,6 @@
 # multi-select
 Friendly multiselect combo in a simple [AngularJS](http://angularjs.org/) directive
+
 Criticism is welcome!
 
 ##Demo
