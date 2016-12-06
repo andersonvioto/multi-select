@@ -8,7 +8,8 @@ https://jsfiddle.net/andersonvioto/h26vtLsg/2/
 
 ##Usage
 ```
-<mc-combo cf-label="myTitle" mc-data="myData" ng-model="myModel" mc-display="displayName" mc-value="value" >
+<mc-combo cf-label="myTitle" mc-data="myData" ng-model="myModel" 
+          mc-display="displayName" mc-value="value" >
 ```
 
 *cf-label:* is te text tha will be displayed in the element
