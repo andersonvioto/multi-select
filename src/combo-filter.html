@@ -1,0 +1,14 @@
+<div>
+    <div class="mcCombo" ng-class="{'mcOpened':mcOpened}">
+        <span class="mcLabel" ng-click="mcOpenOptions()">
+            <span class="mcClear"><b ng-if="mcShowClear" title="limpar filtro" ng-click="mcCleanFilter($event)">X</b></span>  {{mcLabel}} <b class="mcNuIcon">&nu;</b>
+        </span>
+    </div>
+    <div class="mcOptions"  ng-class="{'mcOpened':mcOpened}" >
+        <ul>
+            <li ng-repeat="i in mcList | orderBy:mcDisplay">
+                <label><input type="checkbox" ng-model="mcOptLink[i[mcValue]]"> {{i[mcDisplay]}}</label>
+            </li>
+        </ul>
+    </div>
+</div>

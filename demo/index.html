@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Tree Drag &amp; Drop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+    <script src="demo.js"></script>
+    <script src="../src/mcCombo.js"></script>
+    <link rel="stylesheet" href="../src/mcCombo.css">
+</head>
+<body ng-app="mcComboDemo" ng-controller="mcComboDemoCtrl">
+
+<mc-combo ng-model="filterModel" mc-label="Language" mc-data="mockedOptions"></mc-combo>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>ISO Lang Code</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="a in mockedAuthors | orderBy:'name' | myFilter:filterModel">
+        <td>{{a.name}}</td>
+        <td>{{a.language}}</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
