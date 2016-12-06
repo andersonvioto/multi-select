@@ -9,7 +9,7 @@
  * @param{string} mcValue (Optional) Field in mcData with the object value (default:"value")
  *
  * @example
- * <mc-combo ng-model="myModel" cf-label="myTitle" mc-data="myData" mc-display-field="displayName" mc-value-field="value">
+ * <mc-combo cf-label="myTitle" mc-data="myData" mc-display="displayName" mc-value="value" ng-model="myModel" >
  * @author Anderson Vioto <https://github.com/andersonvioto/multi-select>
  */
 (function() {
