@@ -12,7 +12,7 @@ https://jsfiddle.net/andersonvioto/h26vtLsg/2/
           mc-display="displayName" mc-value="value" >
 ```
 
-*cf-label:* is te text tha will be displayed in the element
+*cf-label:* is the text that will be displayed in the element
 
 *mc-data:* must be an array object that will populate the options list.
 
