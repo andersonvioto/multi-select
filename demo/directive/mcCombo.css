@@ -1,0 +1,11 @@
+mc-combo{display:inline-block;}
+.mcCombo{cursor:pointer;border:1px solid; border-color:#888;}
+.mcLabel {display: block;padding: 5px;background-color: #446CB3; color: white;}
+.mcNuIcon{margin-left: 15px;}
+.mcLabel:hover{color:yellow;}
+.mcClear {display: inline-block;width: 15px;text-align: center;font-weight: 600;color:#ccc;}
+.mcClear:hover{color:red;}
+.mcOptions {position: absolute;display: inline-block;box-shadow: 2px 2px 5px rgba(0,0,0,.8);overflow: hidden; visibility: hidden;
+color:#2b2b2b;background-color:white; border:1px solid #888;}
+.mcOptions.mcOpened{visibility: visible;}
+.mcOptions ul{list-style: none;padding: 10px 15px 10px 5px;margin: 0;}
