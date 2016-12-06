@@ -32,22 +32,22 @@
                 if (!scope.mcDisplay) scope.mcDisplay="display";
                 if (!scope.mcValue) scope.mcValue="value";
 
-                scope.mcOptLink={}; //lista as opções e determina se estão ativas ou não
-                scope.mcOpened=false; //define se as opções serão exibidas
-                scope.mcShowClear=false; //define se o ícone de limpar filtro será exibido
+                scope.mcOptLink={}; //list the options and define if is selected
+                scope.mcOpened=false; //toggle options visibility
+                scope.mcShowClear=false; //show/hide clear option
 
-                /** Define todas as opções como true */
+                /** Starts all options as active*/
                 scope.mcCleanFilter=function(ev){
                     ev.stopPropagation();
                     scope.mcData.forEach(function(i){scope.mcOptLink[i[scope.mcValue]]=true;});
                 };
 
-                /** Exibe/Oculta a lista de opções */
+                /** Show/Hide options list */
                 scope.mcOpenOptions=function(){
                     scope.mcOpened=!scope.mcOpened;
                 };
 
-                /** Observa o objeto lista e refaz as opções caso necessário */
+                /** Data binding */
                 scope.$watchCollection("mcData", function(n){
                     n.forEach(function(i){
                         var t=false;
@@ -60,7 +60,7 @@
                     });
                 });
 
-                /** Observa o opjeto cfOptLink e efetua vínculo com o Model*/
+                /** Binds directive to ngModel*/
                 scope.$watchCollection("mcOptLink", function(n){
                     var r=[];
                     var s=false;
@@ -75,7 +75,7 @@
                     ctrl.$render();
                 });
 
-                /** Observa o Model vinculado e aplica alterações no objeto mcOptLink */
+                /** Binds ngModel to directive */
                 scope.$watch(function(){return ctrl.$modelValue},function(n){
                     scope.mcData.forEach(function(i){
                         var t=false;
@@ -86,7 +86,7 @@
                     });
                 });
 
-                /** Observa se houve clique fora do elemento para ocultar lista de opções eventualmente exibido */
+                /** If clicks outside element close options list if active */
                 document.body.addEventListener('click', listener ,false);
                 function listener(event){
                     if (isChildren(event.target)) return;
