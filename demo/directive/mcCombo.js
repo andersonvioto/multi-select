@@ -16,7 +16,7 @@
     'use strict';
     angular
         .module('mcCombo', [])
-        .directive('mcCombo', [ mcCombo]);
+        .directive('mcCombo', [mcCombo]);
     function mcCombo() {
         return {
             require: 'ngModel',

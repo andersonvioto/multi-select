@@ -4,7 +4,7 @@
         .module('mcComboDemo',['mcCombo'])
         .controller('mcComboDemoCtrl', ['$scope', function($scope){
             $scope.mockedAuthors=[
-                {name: "Stan Lee", language:"en"},
+                {name: "Neil Gaiman", language:"en"},
                 {name: "Victor Hugo", language:"fr"},
                 {name: "Ariano Suassuna", language:"pt"},
                 {name: "Fiódor Dostoiévski", language:"ru"},
